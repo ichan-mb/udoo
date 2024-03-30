@@ -22,7 +22,7 @@ patch(ActionMenus.prototype, {
             'text': 'text-info ri-file-text-line',
         }
         for (const key in map) {
-            if (type instanceof String && type.includes(key)) {
+            if (typeof type === 'string' && type.includes(key)) {
                 return map[key];
             }
         }
