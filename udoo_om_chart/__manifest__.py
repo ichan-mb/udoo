@@ -28,4 +28,6 @@
             ),
         ],
     },
+    'price': 2,
+    'currency': 'EUR',
 }
