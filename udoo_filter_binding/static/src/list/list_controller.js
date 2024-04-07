@@ -1,5 +1,6 @@
 /** @odoo-module */
 
+import { _t } from '@web/core/l10n/translation';
 import { patch } from '@web/core/utils/patch';
 import { useService } from '@web/core/utils/hooks';
 import { ListController } from '@web/views/list/list_controller';
@@ -15,7 +16,7 @@ patch(ListController.prototype, {
         const action_wizard = this.props.context.uslot_action;
         if (!action_wizard) {
             this.notification.add(
-                this.env._t('This functionality is not yet implemented.'),
+                _t('This functionality is not yet implemented.'),
                 {
                     title: this.env._t('Warning'),
                     type: 'warning',

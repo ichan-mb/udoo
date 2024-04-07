@@ -1,5 +1,6 @@
 /** @odoo-module */
 
+import { _t } from '@web/core/l10n/translation';
 import { patch } from '@web/core/utils/patch';
 import { useService } from '@web/core/utils/hooks';
 import { PivotRenderer } from '@web/views/pivot/pivot_renderer';
@@ -16,7 +17,7 @@ patch(PivotRenderer.prototype, {
         const action_wizard = this.search_ctx.uslot_action;
         if (!action_wizard) {
             this.notification.add(
-                this.env._t('This functionality is not yet implemented.'),
+                _t('This functionality is not yet implemented.'),
                 {
                     title: this.env._t('Warning'),
                     type: 'warning',
