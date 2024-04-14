@@ -9,4 +9,9 @@
             </a>
         </xpath>
     </template>
+    <template id="udoo_layout" inherit_id="web.layout">
+        <xpath expr="//link[1]" position="after">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+        </xpath>
+    </template>
 </odoo>
