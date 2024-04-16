@@ -6,7 +6,7 @@
     'category': 'Tools',
     'summary': 'Refined Odoo Graph View with the best color palettes for data visualization, color palette, customize bar color, changing colors in graph, different colors, graph color, bar chart color, line chart, better charts, material chart, dynamic theme color, enterprise color theme, enterprise theme',
     'version': '1.0',
-    'license': 'AGPL-3',
+    'license': 'OPL-1',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern/udoo',
     'images': [
