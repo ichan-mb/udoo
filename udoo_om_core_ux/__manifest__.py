@@ -2,7 +2,7 @@
 # Copyright 2024 Jupetern
 
 {
-    'name': 'Om Backend Community Theme',
+    'name': 'Om Backend Theme Lite',
     'category': 'Themes/Backend',
     'summary': 'Refined Odoo UX with customizable app drawer, chatter box sizing, global search, sticky header, minimalist design, stunning graph view, group fold unfold, optimized multi-line, responsive mobile, sign up login design, split layout, user-friendly, flexible backend theme, fast backend theme, lightweight backend theme, animated backend theme, modern multipurpose theme, community color theme, community theme',
     'version': '1.2',
