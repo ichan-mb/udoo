@@ -29,5 +29,5 @@
         ],
     },
     'price': 2,
-    'currency': 'EUR',
+    'currency': 'USD',
 }
