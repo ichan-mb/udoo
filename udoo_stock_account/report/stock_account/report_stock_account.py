@@ -7,7 +7,7 @@ from odoo import models, api, fields, _
 
 class ReportStockAccount(models.AbstractModel):
     _name = 'report.stock.account'
-    _inherit = ['xlsx.report', 'filter.report.wizard']
+    _inherit = ['filter.report.wizard']
     _description = 'Wizard for report.stock.account'
 
     def _get_company_domain(self):
@@ -128,13 +128,3 @@ class ReportStockAccount(models.AbstractModel):
                 format_date(self.env, self._mdf_date_to()),
             )
         )
-
-    def _prepare_data(self, params):
-        return
-
-    def report_xlsx(self):
-        params = self._build_params()
-        self._prepare_data(params)
-
-        # Call parent to start report
-        return super().report_xlsx()

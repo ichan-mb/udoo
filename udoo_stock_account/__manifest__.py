@@ -5,11 +5,10 @@
     'category': 'Inventory',
     'images': ['static/description/banner.png'],
     'version': '1.0',
-    'license': 'AGPL-3',
+    'license': 'LGPL-3',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern/udoo',
     'depends': [
-        'udoo_excel',
         'udoo_filter_binding',
         'stock_account',
     ],

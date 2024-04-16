@@ -5,7 +5,7 @@
     'name': 'Wizard Filter Binding',
     'category': 'Hidden/Tools',
     'version': '1.0',
-    'license': 'AGPL-3',
+    'license': 'LGPL-3',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern',
     'images': ['static/description/banner.png'],
