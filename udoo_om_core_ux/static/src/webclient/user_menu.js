@@ -36,13 +36,6 @@ function saasAccountItem(env) {
     };
 }
 
-function separatorMode() {
-    return {
-        type: 'separator',
-        sequence: 31,
-    };
-}
-
 patch(UserMenu.prototype, {
     setup() {
         super.setup();

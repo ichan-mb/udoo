@@ -4,7 +4,7 @@ import { patch } from '@web/core/utils/patch';
 import { useService } from '@web/core/utils/hooks';
 import { registry } from '@web/core/registry';
 import { session } from '@web/session';
-import { CommandPalette } from './burger_menu/quick_search';
+import { CommandPalette } from './trays/quick_search';
 import { WebClient } from '@web/webclient/webclient';
 
 const trayMenu = registry.category('systray');

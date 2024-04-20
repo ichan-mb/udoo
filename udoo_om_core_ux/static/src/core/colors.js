@@ -2,7 +2,7 @@ odoo.define('@web/core/colors/colors', [], function (require) {
     'use strict';
 
     const COLORS_BRIGHT = [
-        '#22c3aa',
+        '#17a2b8',
         '#26a0fc',
         '#8b75d7',
         '#ff6178',

@@ -5,7 +5,7 @@
     'name': 'Om Backend Theme Lite',
     'category': 'Themes/Backend',
     'summary': 'Refined Odoo UX with customizable app drawer, chatter box sizing, global search, sticky header, minimalist design, stunning graph view, group fold unfold, optimized multi-line, responsive mobile, sign up login design, split layout, user-friendly, flexible backend theme, fast backend theme, lightweight backend theme, animated backend theme, modern multipurpose theme, community color theme, community theme',
-    'version': '1.2',
+    'version': '1.2.1',
     'license': 'OPL-1',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern/udoo/wiki/Om-Backend-UX',
@@ -51,7 +51,7 @@
             (
                 'before',
                 'web/static/src/scss/bootstrap_overridden.scss',
-                'udoo_om_core_ux/static/src/scss/bootstrap_backend_overridden.scss',
+                'udoo_om_core_ux/static/src/scss/bs_backend_overridden.scss',
             ),
         ],
         'web.assets_backend': [
@@ -59,7 +59,7 @@
             (
                 'replace',
                 'web/static/src/webclient/navbar/navbar.scss',
-                'udoo_om_core_ux/static/src/webclient/navbar/navbar.scss',
+                'udoo_om_core_ux/static/src/webclient/start_menu/navbar.scss',
             ),
             (
                 'after',
@@ -79,7 +79,7 @@
             (
                 'before',
                 'web/static/lib/bootstrap/scss/_variables.scss',
-                'udoo_om_core_ux/static/src/scss/bootstrap_frontend_variables.scss',
+                'udoo_om_core_ux/static/src/scss/bs_frontend_variables.scss',
             ),
             (
                 'after',
@@ -89,7 +89,7 @@
             (
                 'replace',
                 'web/static/src/webclient/navbar/navbar.scss',
-                'udoo_om_core_ux/static/src/webclient/navbar/navbar.scss',
+                'udoo_om_core_ux/static/src/webclient/start_menu/navbar.scss',
             ),
         ],
         'web._assets_core': [

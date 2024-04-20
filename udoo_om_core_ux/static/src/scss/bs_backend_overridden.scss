@@ -21,7 +21,7 @@ $enable-shadows: true !default;
 
 // == Components
 $component-active-color: unset !default;
-$component-active-bg: mix($o-udoo-action-color, $o-white, 10%) !default;
+$component-active-bg: mix($u-action-color, $o-white, 10%) !default;
 
 $nav-tabs-border-radius: 0 !default;
 $nav-pills-border-radius: 0 !default;
@@ -62,12 +62,12 @@ $input-box-shadow: 0 !default;
 
 $input-focus-bg: $o-white !default;
 $input-focus-box-shadow: 0 !default;
-$input-focus-border-color: mix($o-udoo-action-color, $o-gray-200) !default;
+$input-focus-border-color: mix($u-action-color, $o-gray-200) !default;
 
 $form-check-input-checked-color: $o-white !default;
-$form-check-input-checked-border-color: $o-udoo-action-color !default;
-$form-check-input-checked-bg-color: $o-udoo-action-color !default;
-$form-check-input-checked-bg-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$form-check-input-checked-color}' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+$form-check-input-checked-border-color: $u-action-color !default;
+$form-check-input-checked-bg-color: $u-action-color !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$form-check-input-checked-color}' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E") !default;
 
 $form-select-focus-box-shadow: 0 !default;
 
@@ -107,9 +107,9 @@ $alert-border-width: 0 !default;
 $progress-box-shadow: 0 !default;
 
 // == List group
-$list-group-active-color: $o-udoo-action-color !default;
+$list-group-active-color: $u-action-color !default;
 $list-group-active-bg: $component-active-bg !default;
-$list-group-active-border-color: $o-udoo-action-color !default;
+$list-group-active-border-color: $u-action-color !default;
 
 
 // == Image thumbnails

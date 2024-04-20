@@ -12,7 +12,7 @@ import { useFormStatusIndicatorState } from '../webclient/form_status/indicator'
 
 const RFS_KEY_FRAMES = [
     { opacity: 0.9 },
-    { transform: 'translateY(27px)', opacity: 0 },
+    { transform: 'translateY(17px)', opacity: 0 },
     { opacity: 1 },
 ];
 
@@ -51,21 +51,19 @@ patch(ControlPanel.prototype, {
         const { pagerProps, searchModel } = this;
 
         // Refresh effect
-        document.querySelector('.o_content').animate(RFS_KEY_FRAMES, {
-            duration: 500,
+        document.querySelector('.o_content')?.animate(RFS_KEY_FRAMES, {
+            duration: 300,
             easing: 'ease-out',
         });
 
         // If has pager try it first
         if (pagerProps && typeof pagerProps.onUpdate === 'function') {
-            console.log('pager');
             const { limit, offset } = pagerProps;
             await pagerProps.onUpdate({ offset, limit });
         }
 
         // Other case (setting form, ...)
         if (searchModel && typeof searchModel.search === 'function') {
-            console.log('model');
             searchModel.search();
         }
     },
