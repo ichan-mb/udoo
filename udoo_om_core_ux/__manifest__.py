@@ -9,7 +9,7 @@
     'license': 'OPL-1',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern/udoo/wiki/Om-Backend-UX',
-    'sequence': 7,
+    'sequence': 77,
     'images': [
         'static/description/banner.png',
         'static/description/theme_screenshot.png',
