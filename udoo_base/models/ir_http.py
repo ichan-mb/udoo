@@ -12,23 +12,25 @@ class IrHttp(models.AbstractModel):
 
     def session_info(self):
         result = super(IrHttp, self).session_info()
-        config_sudo = request.env['ir.config_parameter'].sudo()
 
-        udoo_configs_param = config_sudo.get_param('udoo_configs')
-        p = configparser.RawConfigParser()
+        if result.get('is_internal_user', False):
+            config_sudo = request.env['ir.config_parameter'].sudo()
 
-        try:
-            p.read_string(udoo_configs_param)
-            result['udoo_configs'] = p._sections
+            udoo_configs_param = config_sudo.get_param('udoo_configs')
+            p = configparser.RawConfigParser()
 
-            if support_url := p._sections['brand'].get('support_url'):
-                result['support_url'] = support_url
-            if documentation_url := p._sections['brand'].get('documentation_url'):
-                result['documentation_url'] = documentation_url
-            if saas_account_url := p._sections['brand'].get('saas_account_url'):
-                result['saas_account_url'] = saas_account_url
+            try:
+                p.read_string(udoo_configs_param)
+                result['udoo_configs'] = p._sections
 
-        except Exception:
-            result['udoo_configs'] = {}
+                if support_url := p._sections['brand'].get('support_url'):
+                    result['support_url'] = support_url
+                if documentation_url := p._sections['brand'].get('documentation_url'):
+                    result['documentation_url'] = documentation_url
+                if saas_account_url := p._sections['brand'].get('saas_account_url'):
+                    result['saas_account_url'] = saas_account_url
+
+            except Exception:
+                result['udoo_configs'] = {}
 
         return result
